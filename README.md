@@ -1,2 +1,10 @@
-# summerApp
-A group built application with no frames so far. Project goal to be decided
+# AN iOS application
+
+## What is the purpose of the application?
+
+## Can i contribute?
+
+### How do i contribute?
+
+## Contribution guidelines
+
