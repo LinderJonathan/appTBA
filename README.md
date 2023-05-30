@@ -1,5 +1,8 @@
 # AN iOS application
-TODO: update the .md
+TODO: 
+Link mac host to project
+
+START BUILDING
 ## What is the purpose of the application?
 
 ## Can i contribute?
