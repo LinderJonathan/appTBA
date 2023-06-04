@@ -1,9 +1,8 @@
 # Twitter (name) bot
 TODO: 
-Research bots
-Research twitter API
+* Research bots
+* Research twitter API
 
-START BUILDING
 ## What is the purpose of the bot?
 
 ## Can i contribute?
