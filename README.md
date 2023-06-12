@@ -1,3 +1,8 @@
+# Discord bot
+
+## What is the purpose of the bot?
+Be able to ping bot to return weather updates.
+
 # Twitter (name) bot
 TODO: 
 * Research bots
@@ -5,11 +10,9 @@ TODO:
 
 ## What is the purpose of the bot?
 
-## Can i contribute?
 
-### How do i contribute?
 
-#### Contribution guidelines
+# Contribution guidelines
 
 ### Sources
 * https://developer.twitter.com/en/docs/tutorials/how-to-create-a-twitter-bot-with-twitter-api-v2
