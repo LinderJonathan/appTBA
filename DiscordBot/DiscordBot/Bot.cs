@@ -12,6 +12,7 @@ using DSharpPlus.Interactivity.Extensions;
 using System.Threading;
 using System.Runtime.Remoting.Messaging;
 using DSharpPlus.EventArgs;
+using DiscordBot.commands;
 
 namespace DiscordBot
 {
@@ -32,6 +33,8 @@ namespace DiscordBot
             var configJson = JsonConvert.DeserializeObject<configJSON>(json);
             var config = new DiscordConfiguration()
             {
+                Intents = DiscordIntents.All,
+                
                 Token = configJson.Token,
                 TokenType = TokenType.Bot,
                 AutoReconnect = true,
@@ -48,7 +51,8 @@ namespace DiscordBot
                 EnableDefaultHelp = false,
             };
 
-            Commands = Client.GetCommandsNext();
+            Commands = Client.UseCommandsNext(commandConfig);
+            Commands.RegisterCommands<Command1>();
 
             await Client.ConnectAsync();
             await Task.Delay(-1);

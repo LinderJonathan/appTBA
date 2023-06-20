@@ -11,9 +11,9 @@ namespace DiscordBot
 {
     internal class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
-            Bot bot = new Bot();
+            var bot = new Bot();
             bot.RunAsync().GetAwaiter().GetResult();
         }
     }
