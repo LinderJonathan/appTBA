@@ -13,6 +13,7 @@ using System.Threading;
 using System.Runtime.Remoting.Messaging;
 using DSharpPlus.EventArgs;
 using DiscordBot.commands;
+using DiscordBot.Commands;
 
 namespace DiscordBot
 {
@@ -52,7 +53,8 @@ namespace DiscordBot
             };
 
             Commands = Client.UseCommandsNext(commandConfig);
-            Commands.RegisterCommands<Command1>();
+            Commands.RegisterCommands<testCommand>();
+            Commands.RegisterCommands<MemberInteractions>();
 
             await Client.ConnectAsync();
             await Task.Delay(-1);

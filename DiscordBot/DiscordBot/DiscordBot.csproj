@@ -145,6 +145,7 @@
     <Compile Include="Bot.cs" />
     <Compile Include="Commands\Command1.cs" />
     <Compile Include="Commands\Help.cs" />
+    <Compile Include="Commands\MemberInteractions.cs" />
     <Compile Include="configJSON.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

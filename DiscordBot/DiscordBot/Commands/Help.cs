@@ -13,7 +13,12 @@ namespace DiscordBot.Commands
         [Command("help")]
         public async Task HelpCommand(CommandContext ctx)
         {
-            
+            //Command not yetspecified what it should do
+        }
+        [Command("list")]
+        public async Task listOfCommands(CommandContext ctx)
+        {
+            //TODO: set up a txt file with all commands that are available
         }
     }
 }

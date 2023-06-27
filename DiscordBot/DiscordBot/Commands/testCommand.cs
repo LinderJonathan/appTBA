@@ -11,26 +11,20 @@ using System.Threading.Tasks;
 
 namespace DiscordBot.commands
 {
-    public class Command1 : BaseCommandModule
+    public class testCommand : BaseCommandModule
     {
 
-        [Command("test")]
-        //[Cooldown(5, 60.0, bucketType:CommandCooldownBucket)]
+        [Command("ping")]
         public async Task TestCommand(CommandContext ctx)
         {
-            await ctx.Channel.SendMessageAsync("test command pinged");
+            await ctx.Channel.SendMessageAsync("bot pinged");
 
         }
         [Command("who")]
         public async Task WhoCommand(CommandContext ctx)
         {
             var user = ctx.User;
-            await ctx.Channel.SendMessageAsync("You are " + user.Username);
-        }
-        [Command("strike")]
-        public async Task UserStrike(CommandContext ctx, string user)
-        {
-            //TODO: get all usernames from the server
+            await ctx.Channel.SendMessageAsync("Your username is " + user.Username);
         }
     }
 }

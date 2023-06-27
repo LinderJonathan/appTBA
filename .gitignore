@@ -38,3 +38,5 @@ app/packages/TweetinviAPI.5.0.4/tools/install.ps1
 app/app/obj/Debug/app.csproj.CopyComplete
 app/app.sln
 app/.vs/app/v17/.suo
+DiscordBot/DiscordBot/obj/Debug/DiscordBot.csproj.FileListAbsolute.txt
+DiscordBot/DiscordBot/obj/Debug/DiscordBot.csproj.FileListAbsolute.txt
