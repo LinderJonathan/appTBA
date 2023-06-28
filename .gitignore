@@ -40,3 +40,11 @@ app/app.sln
 app/.vs/app/v17/.suo
 DiscordBot/DiscordBot/obj/Debug/DiscordBot.csproj.FileListAbsolute.txt
 DiscordBot/DiscordBot/obj/Debug/DiscordBot.csproj.FileListAbsolute.txt
+DiscordBot/.vs/DiscordBot/v17/.suo
+*.lock
+DiscordBot/.vs/DiscordBot/v17/.suo
+DiscordBot/DiscordBot/.vs/DiscordBot/v17/.wsuo
+DiscordBot/DiscordBot/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+DiscordBot/DiscordBot/.vs/VSWorkspaceState.json
+DiscordBot/DiscordBot/.vs/slnx.sqlite
+DiscordBot/.vs/DiscordBot/v17/.suo
