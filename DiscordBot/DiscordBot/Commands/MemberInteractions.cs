@@ -24,16 +24,21 @@ namespace DiscordBot.Commands
         {
             targetMember = targetMember.ToLower();
             var discordMembers = ctx.Guild.Members.Values;
+
+            //TODO: still need to check for null value
             foreach (var discordMember in discordMembers)
             {
+                //if (nickname == null || username == null)
                 if (discordMember.Nickname.ToLower().Equals(targetMember) || discordMember.Username.ToLower().Equals(targetMember)) // '==' or 'equals'?
                 {
                     await ctx.Channel.SendMessageAsync("STRIIIIIIIIIIIKKING " + discordMember.Nickname);
                     break;
                 }
                 else
-                    await ctx.Channel.SendMessageAsync(targetMember + " is not part of this channel and/or server");
-            }            
-        }
+                    //await ctx.Channel.SendMessageAsync(targetMember + " is not part of this channel and/or server");
+                    continue;
+            }
+         }
+
     }
 }

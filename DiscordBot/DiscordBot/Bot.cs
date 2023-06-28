@@ -12,7 +12,6 @@ using DSharpPlus.Interactivity.Extensions;
 using System.Threading;
 using System.Runtime.Remoting.Messaging;
 using DSharpPlus.EventArgs;
-using DiscordBot.commands;
 using DiscordBot.Commands;
 
 namespace DiscordBot
