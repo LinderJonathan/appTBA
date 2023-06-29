@@ -23,8 +23,8 @@ namespace DiscordBot.Commands
         public async Task strikeMember(CommandContext ctx, [RemainingText] string targetMember) //string member
         {
             targetMember = targetMember.ToLower();
-            var discordMembers = ctx.Guild.Members.Values;
-
+            List<DiscordMember> discordMembers = ctx.Guild.Members.Values.ToList();
+            string nick1 = discordMembers[0].Nickname; //now we just need all nicknames and all usernames
             //TODO: still need to check for null value
             foreach (var discordMember in discordMembers)
             {

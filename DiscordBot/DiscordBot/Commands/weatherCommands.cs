@@ -1,4 +1,5 @@
 ﻿using DSharpPlus.CommandsNext;
+using DSharpPlus.CommandsNext.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,10 @@ namespace DiscordBot.Commands
 {
     internal class weather : BaseCommandModule
     {
+        [Command("weather")]
         public async Task weatherToday(CommandContext ctx, string city)
         {
-
+            await ctx.Channel.SendMessageAsync("Sorry! Haven't implemented forecasts for given cities yet!");
         }
     }
 }
