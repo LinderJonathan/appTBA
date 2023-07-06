@@ -18,25 +18,33 @@ namespace DiscordBot.Commands
      */
     public class MemberInteractions : BaseCommandModule
     {
-        //TODO: throw null-exception when no nickname is yet defined
         [Command("strike")]
         public async Task strikeMember(CommandContext ctx, [RemainingText] string targetMember) //string member
         {
             targetMember = targetMember.ToLower();
             List<DiscordMember> discordMembers = ctx.Guild.Members.Values.ToList();
-            string nick1 = discordMembers[0].Nickname; //now we just need all nicknames and all usernames
-            //TODO: still need to check for null value
-            foreach (var discordMember in discordMembers)
+            List<string> memberNicknames = new List<string> { };
+            List<string> memberUsernames = new List<string> { };
+            foreach(DiscordMember member in discordMembers)
             {
-                //if (nickname == null || username == null)
-                if (discordMember.Nickname.ToLower().Equals(targetMember) || discordMember.Username.ToLower().Equals(targetMember)) // '==' or 'equals'?
+                if (!(member.Nickname == null))
                 {
-                    await ctx.Channel.SendMessageAsync("STRIIIIIIIIIIIKKING " + discordMember.Nickname);
-                    break;
+                    memberNicknames.Add(member.Nickname.ToLower());
+
                 }
-                else
-                    //await ctx.Channel.SendMessageAsync(targetMember + " is not part of this channel and/or server");
-                    continue;
+                if (!(member.Username == null))
+                {
+                    memberUsernames.Add(member.Username.ToLower());
+                }
+                //nickname and username should be made ToLower()
+            }
+            if (memberNicknames.Contains(targetMember) || memberUsernames.Contains(targetMember))
+            {
+                await ctx.Channel.SendMessageAsync($"Sorry, {targetMember}, strike maffaka");
+            }
+            else
+            {
+                await ctx.Channel.SendMessageAsync($"{targetMember} not found." + $" {targetMember} has either not set their nickname or are a part of the server.");
             }
          }
 

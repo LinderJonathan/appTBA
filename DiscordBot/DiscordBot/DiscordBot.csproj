@@ -150,6 +150,7 @@
     <Compile Include="configJSON.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMHI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
