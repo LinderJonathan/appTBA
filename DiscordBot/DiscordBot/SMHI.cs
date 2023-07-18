@@ -39,7 +39,7 @@ namespace DiscordBot
         //TODO: 
         static async Task<Uri> GetForecast(string path)
         {
-            var uri = new Uri($"{entryObs}"); //Fix
+            //var uri = new Uri($"{entryObs}"); //Fix
             //path = base string together with inputs from the discord command: api/category/{category}/version/{version}/geotype/point/lon/{longitude}/lat/{latitude} example
             path = "api/category/pmp3g/version/2/geotype/point/lon/16/lat/58";
             HttpResponseMessage response = await httpClient.GetAsync(path);
